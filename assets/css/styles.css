@@ -78,12 +78,14 @@
 
 html{
   scroll-behavior: smooth;
+  background-color: #000;
 }
 
 body{
   margin: 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
+  background-color: #000;
   background: var(--body-color);
   color: var(--text-color);
 }
@@ -209,6 +211,8 @@ button{
     radial-gradient(700px 440px at 12% 0%, hsla(0, 0%, 100%, .06) 0%, transparent 72%),
     linear-gradient(180deg, #101010 0%, #050505 100%);
   position: relative;
+  margin-top: calc(-1 * var(--safe-area-top));
+  padding-top: var(--safe-area-top);
   overflow: hidden;
   isolation: isolate;
 }
